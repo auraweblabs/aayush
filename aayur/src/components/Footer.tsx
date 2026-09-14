@@ -162,14 +162,20 @@ export function Footer() {
         {/* Bottom Copyright & Local Disclaimer */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#ccdcd1]/70">
           <p suppressHydrationWarning>
-            © {new Date().getFullYear()} {SITE_CONFIG.name}. All Rights Reserved. 19 Turnock Drive, Cameron Park NSW 2285.
+            © {new Date().getFullYear()} {SITE_CONFIG.name} |{" "}
+            <a
+              href="https://www.auraweblabs.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#cca058] transition-colors underline underline-offset-2"
+            >
+              Designed by Aura Web Labs
+            </a>
           </p>
           <div className="flex items-center gap-6">
-            <span>Holistic Ayurvedic Wellness</span>
+            <a href="#services" className="hover:text-[#cca058] transition-colors">Services</a>
             <span>•</span>
-            <a href="#services" className="hover:text-[#cca058]">Services</a>
-            <span>•</span>
-            <a href="#faqs" className="hover:text-[#cca058]">FAQ</a>
+            <a href="#faqs" className="hover:text-[#cca058] transition-colors">FAQ</a>
           </div>
         </div>
       </div>
