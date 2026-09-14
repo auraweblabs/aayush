@@ -8,7 +8,6 @@ import { AyurvedicPhilosophy } from "@/components/AyurvedicPhilosophy";
 import { FaqSection } from "@/components/FaqSection";
 import { LocationCard } from "@/components/LocationCard";
 import { Footer } from "@/components/Footer";
-import { MobileStickyBar } from "@/components/MobileStickyBar";
 
 export default function Home() {
   return (
@@ -45,9 +44,6 @@ export default function Home() {
 
       {/* Grounding Dark Footer */}
       <Footer />
-
-      {/* Mobile-First Sticky Conversion Bar */}
-      <MobileStickyBar />
     </div>
   );
 }
