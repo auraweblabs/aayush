@@ -89,7 +89,7 @@ export function Hero() {
             <Sparkles className="w-5 h-5 text-[#cca058] shrink-0" />
             <div className="text-xs">
               <p className="font-bold text-[#FBF9F5]">Pure Herbal Oils</p>
-              <p className="text-[#ccdcd1]">Customized to Your Dosha</p>
+              <p className="text-[#ccdcd1]">Customized to Your "Dosha"</p>
             </div>
           </div>
 
