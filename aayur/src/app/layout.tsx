@@ -44,7 +44,11 @@ export const metadata: Metadata = {
   creator: "Aayur Touch",
   publisher: "Aayur Touch",
   icons: {
-    icon: "/images/AAYUR-TOUCH-web sqr.webp",
+    icon: [
+      { url: "/images/AAYUR-TOUCH-web sqr.webp", type: "image/webp" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    shortcut: "/images/AAYUR-TOUCH-web sqr.webp",
     apple: "/images/AAYUR-TOUCH-web sqr.webp",
   },
   metadataBase: new URL("https://aayurtouch.com.au"),
@@ -96,6 +100,11 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
+        {/* Favicon & Web Icons */}
+        <link rel="icon" href="/images/AAYUR-TOUCH-web sqr.webp" type="image/webp" />
+        <link rel="shortcut icon" href="/images/AAYUR-TOUCH-web sqr.webp" type="image/webp" />
+        <link rel="apple-touch-icon" href="/images/AAYUR-TOUCH-web sqr.webp" />
+
         {/* Google tag (gtag.js) */}
         <script
           async
